@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biografi</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background-image: url('Screenshot 2025-04-24 204044.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 200vh;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px 30x;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.95);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      color: rgb(255, 247, 217);
+      -webkit-text-stroke-color: rgb(255, 170, 109);
+      -webkit-text-stroke-width: thin;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 45px;
+      font-family: tahoma;
+      color: white;
+      -webkit-text-stroke: 1px black;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 25px;
+      color: white;
+      -webkit-text-stroke: 1px black;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="color:white; font-size:20px;">Halaman Biografi</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navMenu">
+      <a href="Index.html">Biografi</a>
+      <a href="Karakter.html">Karakter Favorit</a>
+    </div>
+  </header>
+
+  <div style="text-align: center;">
+    <h1>Hi, my name is sean</h1>
+    <p>My name is sean, I was born on July 23 2011</p>
+    <img src="WIN_20250523_11_53_12_Pro.jpg" alt="Sean Suhendra">
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navMenu'); 
+      if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+      }
+    }
+  </script>
+</body>
+</html>
